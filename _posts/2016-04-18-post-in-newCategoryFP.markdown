@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Post in newCategoryFP"
-date:   2016-04-18 13:14:18 -0600
+date:   2016-04-18 09:44:18 -0600
 categories: jekyll newCategoryFP 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
