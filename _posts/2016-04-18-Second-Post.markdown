@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Second Post"
+title:  Second Post
 date:   2016-04-18 12:28:18 -0600
-categories: jekyll update learning
+categories: jekyll, learning
 ---
 # Second Post #
 
