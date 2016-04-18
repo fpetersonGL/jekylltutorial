@@ -8,7 +8,7 @@
 # Site settings
 title: Adventures in Jekyll Categories
 email: fpeterson@goldstarlearning.com
-description: # this means to ignore newlines until "baseurl:"
+description: > # this means to ignore newlines until "baseurl:"
 Exploring category-driven navigation for a Jekyll site.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site
