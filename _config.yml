@@ -30,3 +30,4 @@ github_username:  fpetersonGL
 
 # Build settings
 markdown: kramdown
+excerpt_separator: <!--endExcerpt-->
