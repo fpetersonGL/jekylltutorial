@@ -1,0 +1,63 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Gist
+
+    @fpetersonGL
+
+1
+0
+
+    0
+
+fpetersonGL/jekylltutorial
+Code
+Issues 0
+Pull requests 0
+Wiki
+Pulse
+Graphs
+Settings
+jekylltutorial/index.html
+655f50c 23 minutes ago
+@fpetersonGL fpetersonGL Update index.html
+25 lines (18 sloc) 533 Bytes
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts in Category "newCategoryFP"</h1>
+
+  <ul class="post-list">
+  <li>
+       This is where the category's post list should appear.
+  </li>
+  <li>
+       {% site.categories.newCategoryFP %}
+  </li>
+  <!--
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+    -->
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+
+    Status API Training Shop Blog About 
+
+    © 2016 GitHub, Inc. Terms Privacy Security Contact Help 
+
