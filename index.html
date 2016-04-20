@@ -26,7 +26,6 @@ layout: default
             {% for post in site.category %}
               <li>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                {{ post.excerpt }}
               </li>
             {% endfor %}
           </il>
