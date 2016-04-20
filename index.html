@@ -21,7 +21,7 @@ layout: default
   <ul class="post-list">
     {% for category_hash in site.categories %}
       {% for category in category_hash %}
-        <li>{{ category[1] }}</li>
+        <li>{{ category | first }}</li>
       {% endfor %}
     {% endfor %}
   </ul>
