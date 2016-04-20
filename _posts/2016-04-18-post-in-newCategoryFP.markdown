@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Post in newCategoryFP"
 date:   2016-04-18 09:44:18 -0600
 categories: jekyll newCategoryFP 
