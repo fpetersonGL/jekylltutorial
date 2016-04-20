@@ -21,17 +21,13 @@ layout: default
   <ul class="post-list">
     {% for category in site.categories %}
       <li>
-        <h2>
-          {{ category | first }}
-        </h2>
+        <h2>{{ category }}</h2>
           <ul class="post-list">
             {% for post in site.category %}
-            <li>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                <ul>
-                  <li>{{ post.excerpt }}</li>
-                </ul>
-            </li>
+              <li>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                {{ post.excerpt }}
+              </li>
             {% endfor %}
           </il>
       </li>
@@ -40,17 +36,14 @@ layout: default
 
 
   <ul class="post-list">
-    {% for collection in site.collections %}
+    {% for helpdoc in site.helpdocs %}
       <li>
         <h2>
-          {{ collection | first }}
+          {{ helpdoc | first }}
         </h2>
       </li>
       <li>
           <a class="post-link" href="{{ helpdoc.url | prepend: site.baseurl }}">{{ helpdoc.title }}</a>
-          <ul>
-            <li>{{ helpdoc.excerpt }}</li>
-          </ul>
       </li>
       </li>
     {% endfor %}
