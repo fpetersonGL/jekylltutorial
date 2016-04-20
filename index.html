@@ -10,7 +10,6 @@ layout: default
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
@@ -18,7 +17,42 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  
+  <ul class="post-list">
+    {% for category in site.categories %}
+      <li>
+        <h2>
+          {{ category.name }}
+        </h2>
+          <ul class="post-list">
+            {% for post in site.category %}
+            <li>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <ul>
+                  <li>{{ post.excerpt }}</li>
+                </ul>
+            </li>
+                {% endfor %}
+          </il>
+      </li>
+  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  <ul class="post-list">
+    {% for collection in site.collections %}
+      <li>
+        <h2>
+          {{ collection.name }}
+        </h2>
+      </li>
+      <li>
+          <a class="post-link" href="{{ helpdoc.url | prepend: site.baseurl }}">{{ helpdoc.title }}</a>
+          <ul>
+            <li>{{ helpdoc.excerpt }}</li>
+          </ul>
+      </li>
+      </li>
+    {% endfor %}
+  </ul>
 
 </div>
