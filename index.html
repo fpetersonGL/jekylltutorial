@@ -19,8 +19,10 @@ layout: default
   </ul>
   
   <ul class="post-list">
-    {% for key in site.categories.keys %}
-      <li>{{ key }}</li>
+    {% for category_hash in site.categories %}
+      {% for category in category_hash %}
+        <li>{{ category[0] }}</li>
+      {% endfor %}
     {% endfor %}
   </ul>
 
