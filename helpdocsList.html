@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Documents in Collection "helpdocs"</h1>
+  
+  <ul class="post-list">
+  <li>
+       This is where the collection's post list should appear.
+  </li>
+
+    {% for helpdoc in site.collection.helpdocs %}
+      <li>
+
+        <h2>
+          <a class="post-link" href="{{ helpdoc.url | prepend: site.baseurl }}">{{ helpdoc.title }}</a>
+        </h2>
+        {{ helpdoc.excerpt }}
+
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
