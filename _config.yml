@@ -18,9 +18,8 @@ github_username:  fpetersonGL
 
 # Collections
 collections:
-  assessments
-  reports
-  users
+  helpdocs:
+    output: true
 
 
 # Outputting
